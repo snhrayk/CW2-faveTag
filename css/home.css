@@ -13,12 +13,22 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 6px;
 }
-header img {
-  -o-object-fit: cover;
-     object-fit: cover;
+header .headerBtn {
   width: 24px;
-  height: 24px;
+  height: auto;
+}
+
+main .artistTabWrap {
+  display: flex;
+  justify-content: space-around;
+}
+main .artistTabWrap .artistTab {
+  width: 100px;
+  height: 60px;
+  text-align: center;
+  padding-top: 6px;
 }
 
 footer {
@@ -28,4 +38,5 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 6px;
 }/*# sourceMappingURL=home.css.map */
