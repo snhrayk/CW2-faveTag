@@ -1,1 +1,1 @@
-const noticeMenu = document.querySelector(".notice");
+// const noticeMenu = document.querySelector(".notice");

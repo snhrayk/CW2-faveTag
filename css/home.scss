@@ -37,11 +37,17 @@ main {
   .artistTabWrap {
     display: flex;
     justify-content: space-around;
-    .artistTab {
-      width: 100px;
-      height: 60px;
-      text-align: center;
-      padding-top: 6px;
+    a {
+      text-decoration: none;
+      .artistTab {
+        width: 100px;
+        height: 60px;
+        text-align: center;
+        padding-top: 6px;
+      }
+      p {
+        color: $accent;
+      }
     }
   }
   .artistTop {
@@ -94,26 +100,44 @@ main {
         align-items: center;
         margin-bottom: 20px;
         // border: 1px solid tomato;
-        .userIcon {
-          width: 36px;
-          height: 36px;
-          border-radius: 100%;
-          background-color: #c74a82;
-          margin-left: 14px;
-        }
-        .userName {
-          max-width: 130px;
+        .userWrap {
           height: 100%;
           display: flex;
-          align-items: end;
-          h3 {
-            font-family: "Hiragino Maru Gothic Std", sans-serif;
-            font-size: 2rem;
-            font-weight: 400;
+          align-items: center;
+          .userIcon {
+            width: 36px;
+            height: 36px;
+            border-radius: 100%;
+            background-color: #c74a82;
+            margin-left: 14px;
           }
-          p {
-            font-size: 1rem;
-            color: $subFont;
+          .userName {
+            width: 130px;
+            height: 36px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            // border: 1px solid tomato;
+            padding-left: 10px;
+            p {
+              font-family: "Hiragino Maru Gothic Std", sans-serif;
+              font-size: 2rem;
+              font-weight: 400;
+              line-height: 1.2;
+              padding: 0;
+              margin: 0;
+              span {
+                font-size: 1rem;
+                font-weight: 300;
+                padding-left: 5px;
+                color: $subFont;
+              }
+            }
+            time {
+              font-size: 0.8rem;
+              color: $subFont;
+            }
           }
         }
         h4 {
@@ -121,6 +145,7 @@ main {
           font-family: "Hiragino Maru Gothic Std", sans-serif;
           font-size: 2rem;
           font-weight: 400;
+          margin-left: 8rem;
           margin-right: 2rem;
         }
       }
