@@ -1,0 +1,58 @@
+$background: #aebae4;
+$main: #4a6dc7;
+$accent: #001f3f;
+$heart: #c74a82;
+$event: rgba(233, 66, 53, 0.6);
+$release: rgba(74, 131, 199, 0.6);
+$goods: rgba(74, 199, 154, 0.6);
+$other: rgba(0, 0, 0, 0.6);
+$subFont: rgba(0, 31, 63, 0.6);
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $main;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  .logo {
+    text-align: center;
+    margin: 300px auto 230px;
+  }
+  .signBtn {
+    width: 90%;
+    margin: 0 auto;
+    p {
+      width: 100%;
+      height: 52px;
+      text-align: center;
+      font-family: "Hiragino Maru Gothic Std", sans-serif;
+      font-size: 1.6rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 6px;
+      margin-bottom: 6px;
+      a {
+        text-decoration: none;
+      }
+    }
+    p:first-child {
+      background-color: white;
+      a {
+        color: $main;
+      }
+    }
+    p:last-child {
+      background-color: $main;
+      border: 1px solid white;
+      a {
+        color: white;
+      }
+    }
+  }
+}

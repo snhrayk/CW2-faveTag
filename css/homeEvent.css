@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html {
   font-size: 62.5%;
 }
@@ -22,10 +21,6 @@ header .headerBtn {
   height: auto;
 }
 
-main {
-  /* モーダルの内容 */
-  /* クローズボタン */
-}
 main .artistTabWrap {
   width: 100%;
   height: auto;
@@ -95,7 +90,7 @@ main .menuTab p:first-child {
 }
 main .menuTab .menuSelect {
   width: 20%;
-  border-bottom: 6px solid #4a6dc7;
+  border-bottom: 6px solid rgba(233, 66, 53, 0.6);
   font-size: 1.4rem;
   padding-bottom: 4px;
 }
@@ -113,6 +108,7 @@ main .postWrap section {
   background-color: white;
   padding: 14px 0 10px;
   border-bottom: 1px solid rgba(0, 31, 63, 0.6);
+  border-left: 14px solid rgba(233, 66, 53, 0.6);
 }
 main .postWrap section .nameWrap {
   width: 100%;
@@ -167,6 +163,7 @@ main .postWrap section .nameWrap h4 {
   font-weight: 400;
   margin-left: 8rem;
   margin-right: 2rem;
+  color: rgba(233, 66, 53, 0.6);
 }
 main .postWrap section .userText {
   font-size: 1.6rem;
@@ -185,30 +182,6 @@ main .postWrap section .btnWrap button:last-child > img {
   width: 20px;
   height: auto;
 }
-main .postWrap section:first-child {
-  border-left: 14px solid rgba(233, 66, 53, 0.6);
-}
-main .postWrap section:first-child h4 {
-  color: rgba(233, 66, 53, 0.6);
-}
-main .postWrap section:nth-child(2) {
-  border-left: 14px solid rgba(74, 131, 199, 0.6);
-}
-main .postWrap section:nth-child(2) h4 {
-  color: rgba(74, 131, 199, 0.6);
-}
-main .postWrap section:nth-child(3) {
-  border-left: 14px solid rgba(74, 199, 154, 0.6);
-}
-main .postWrap section:nth-child(3) h4 {
-  color: rgba(74, 199, 154, 0.6);
-}
-main .postWrap section:nth-child(4) {
-  border-left: 14px solid rgba(0, 0, 0, 0.6);
-}
-main .postWrap section:nth-child(4) h4 {
-  color: rgba(0, 0, 0, 0.6);
-}
 main .postBtn {
   width: 66px;
   height: 66px;
@@ -226,36 +199,6 @@ main .postBtn {
 main .postBtn a {
   font-size: 4rem;
 }
-main .modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-main .post {
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
-main .close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-main .close:hover,
-main .close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
 
 footer {
   width: 100%;
@@ -265,4 +208,4 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 0 6px;
-}/*# sourceMappingURL=home.css.map */
+}/*# sourceMappingURL=homeEvent.css.map */

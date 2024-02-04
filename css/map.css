@@ -1,0 +1,43 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #aebae4;
+}
+
+header {
+  width: 100%;
+  height: 44px;
+  background-color: #4a6dc7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 6px 0;
+  border-bottom: 1px solid rgba(0, 31, 63, 0.6);
+}
+header .headerBtn {
+  width: 24px;
+  height: auto;
+}
+
+main {
+  width: 100%;
+  height: auto;
+}
+main .map {
+  width: 100%;
+  height: 700px;
+  background-size: cover;
+  background-image: url(../img/map.jpg);
+}
+
+footer {
+  width: 100%;
+  height: 44px;
+  background-color: #4a6dc7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6px;
+}/*# sourceMappingURL=map.css.map */
