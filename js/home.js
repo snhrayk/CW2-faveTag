@@ -1,22 +1,24 @@
-// モーダルとボタンとクローズボタンの要素を取得
-var modal = document.querySelector("#modalMW");
-var btn = document.querySelector("#postBtn");
-var span = document.querySelector(".close")[0];
+//要素を取得
+const modal = document.querySelector(".js-modal"),
+  open = document.querySelector(".postBtn"),
+  close = document.querySelector(".js-modal-close");
 
-// ボタンをクリックしたときにモーダルを表示
+//「開くボタン」をクリックしてモーダルを開く
+function modalOpen() {
+  modal.classList.add("is-active");
+}
+open.addEventListener("click", modalOpen);
 
-// btn.onclick = function () {
-//   modal.style.display = "block";
-// };
+//「閉じるボタン」をクリックしてモーダルを閉じる
+function modalClose() {
+  modal.classList.remove("is-active");
+}
+close.addEventListener("click", modalClose);
 
-// クローズボタンをクリックしたときにモーダルを非表示
-// span.onclick = function () {
-//   modal.style.display = "none";
-// };
-
-// ユーザーがモーダルの外側をクリックしたときにモーダルを非表示
-// window.onclick = function (event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// };
+//「モーダルの外側」をクリックしてモーダルを閉じる
+function modalOut(e) {
+  if (e.target == modal) {
+    modal.classList.remove("is-active");
+  }
+}
+addEventListener("click", modalOut);

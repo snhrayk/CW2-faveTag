@@ -156,16 +156,29 @@
           </div>
         </section>
       </div>
-      <p id="postBtnMW" class="postBtn">
+
+      <p class="postBtn">
         <a>＋</a>
       </p>
 
-      <!-- モーダル -->
-      <div id="modalMW" class="modal">
-        <div class="post">
-          <span class="close">&times;</span>
-          <p>ここに文章を入力してください。</p>
-          <textarea></textarea>
+      <div class="modal js-modal">
+        <div class="modal-container">
+          <!-- モーダル内部のコンテンツ -->
+          <div class="modal-content">
+            <div class="text">
+              <select name="example" class="genre">
+                <option value="イベント">イベント</option>
+                <option value="リリース">リリース</option>
+                <option value="グッズ">グッズ</option>
+                <option value="その他">その他</option>
+              </select>
+              <input type="text" />
+            </div>
+            <div class="btnWrap">
+              <div class="modal-close js-modal-close">キャンセル</div>
+              <div class="post">投稿</div>
+            </div>
+          </div>
         </div>
       </div>
     </main>

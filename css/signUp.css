@@ -22,7 +22,7 @@ main h1 {
 }
 main .logIn {
   width: 90%;
-  margin: 0 auto 46px;
+  margin: 0 auto 20px;
 }
 main .logIn h2 {
   font-size: 2rem;
@@ -52,7 +52,7 @@ main .logIn .formWrap .mailAddress input {
 main .logIn .formWrap .password {
   width: 100%;
   color: #001f3f;
-  margin-bottom: 40px;
+  margin-bottom: 16px;
 }
 main .logIn .formWrap .password p {
   padding-left: 10px;
@@ -78,10 +78,11 @@ main .logIn button {
   background-color: #4a6dc7;
   color: white;
   font-size: 1.6rem;
+  margin-top: 20px;
 }
 main .googleLogIn {
   width: 90%;
-  margin: 0 auto 60px;
+  margin: 0 auto 20px;
 }
 main .googleLogIn img {
   width: 100%;
@@ -107,4 +108,4 @@ footer p {
 }
 footer p a {
   color: white;
-}/*# sourceMappingURL=logIn.css.map */
+}/*# sourceMappingURL=signUp.css.map */

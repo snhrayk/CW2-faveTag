@@ -5,6 +5,7 @@ html {
 
 body {
   background-color: #aebae4;
+  font-family: "Hiragino Maru Gothic Std", sans-serif;
 }
 
 header {
@@ -23,8 +24,12 @@ header .headerBtn {
 }
 
 main {
-  /* モーダルの内容 */
-  /* クローズボタン */
+  /* モーダルと背景の指定 */
+  /* モーダルの擬似要素の指定 */
+  /* クラスが追加された時の指定 */
+  /* モーダル内側の指定 */
+  /* モーダルのコンテンツ部分の指定 */
+  /* モーダルのコンテンツ部分のテキストの指定 */
 }
 main .artistTabWrap {
   width: 100%;
@@ -55,8 +60,8 @@ main .artistTabWrap a p {
 main .artistTop {
   width: 100%;
   height: 106px;
-  background-image: url(../img/AdobeStock_173439459.jpeg);
-  background-position: top 100px;
+  background-image: url(../img/Stella\ Rivers.jpeg);
+  background-position: center;
   background-size: cover;
   position: relative;
   top: 0;
@@ -227,34 +232,80 @@ main .postBtn a {
   font-size: 4rem;
 }
 main .modal {
-  display: none;
   position: fixed;
-  z-index: 1;
-  left: 0;
   top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px 20px;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+main .modal:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  margin-left: -0.2em;
+}
+main .modal.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+main .modal-container {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 600px;
+  width: 90%;
+}
+main .modal-content {
+  height: 250px;
+  background: #fff;
+  text-align: left;
+  line-height: 1.8;
+  padding: 20px;
+}
+main .modal-content .text {
+  display: flex;
+  flex-direction: column;
+}
+main .modal-content .text .genre {
+  font-size: 1.4rem;
+}
+main .modal-content .text input {
+  height: 100px;
+  font-size: 1.4rem;
+}
+main .btnWrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  /* モーダルを閉じるボタンの指定 */
+}
+main .modal-close {
+  font-size: 1.4rem;
+  color: #b70d00;
+  cursor: pointer;
 }
 main .post {
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
+  width: 80px;
+  height: 80px;
+  background-color: #4a6dc7;
+  border-radius: 100%;
+  color: white;
+  font-size: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-main .close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-main .close:hover,
-main .close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+main .modal-content p {
+  margin: 1em 0;
 }
 
 footer {

@@ -31,10 +31,24 @@ main .map {
   background-size: cover;
   background-image: url(../img/map.jpg);
 }
+main .map button:first-child {
+  transform: translate(220px, 100px);
+}
+main .map button:nth-child(2) {
+  transform: translate(300px, 400px);
+}
+main .map #tooltip {
+  position: absolute;
+  display: none;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
 
 footer {
   width: 100%;
-  height: 44px;
   background-color: #4a6dc7;
   display: flex;
   justify-content: space-between;
