@@ -34,8 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
     );
     const data = await response.json();
     console.log(data);
-    const artistImg = document.querySelectorAll(".artistImg")[1]; // 修正されたインデックス
-    const artistName = document.querySelectorAll(".artistName")[1]; // 修正されたインデックス
+    const artistImg = document.querySelectorAll(".artistImg")[1];
+    const artistName = document.querySelectorAll("artistName")[1];
 
     // アーティストの写真を表示
     artistImg.style.backgroundImage = `url(${data.images[0].url})`;
@@ -56,8 +56,8 @@ document.addEventListener("DOMContentLoaded", function () {
     );
     const data = await response.json();
     console.log(data);
-    const artistImg = document.querySelectorAll(".artistImg")[2]; // 修正されたインデックス
-    const artistName = document.querySelectorAll(".artistName")[2]; // 修正されたインデックス
+    const artistImg = document.querySelectorAll(".artistImg")[2];
+    const artistName = document.querySelectorAll(".artistName")[2];
 
     // アーティストの写真を表示
     artistImg.style.backgroundImage = `url(${data.images[0].url})`;
@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
 //artistTop
 // 1. Spotify APIを使用してアーティスト情報を取得する関数
 async function fetchArtistInfo() {
-  const artistName = "Ariana Grande";
+  const artistName = "Sabrina Carpenter";
   const url = `https://api.spotify.com/v1/search?q=${encodeURIComponent(
     artistName
   )}&type=artist`;
@@ -125,29 +125,3 @@ async function applyArtistInfo() {
 
 // 3. applyArtistInfo関数を呼び出して実行
 applyArtistInfo();
-
-// ここから下はモーダルの実装です
-//要素を取得
-const modal = document.querySelector(".js-modal"),
-  open = document.querySelector(".postBtn"),
-  close = document.querySelector(".js-modal-close");
-
-//「開くボタン」をクリックしてモーダルを開く
-function modalOpen() {
-  modal.classList.add("is-active");
-}
-open.addEventListener("click", modalOpen);
-
-//「閉じるボタン」をクリックしてモーダルを閉じる
-function modalClose() {
-  modal.classList.remove("is-active");
-}
-close.addEventListener("click", modalClose);
-
-//「モーダルの外側」をクリックしてモーダルを閉じる
-function modalOut(e) {
-  if (e.target == modal) {
-    modal.classList.remove("is-active");
-  }
-}
-addEventListener("click", modalOut);
