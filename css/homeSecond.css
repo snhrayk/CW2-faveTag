@@ -42,7 +42,6 @@ main .artistTabWrap a:nth-child(2) .artistImg {
   height: 36px;
   border-radius: 100%;
   background-size: cover;
-  border: 1px solid #4a6dc7;
 }
 main .artistTabWrap a:nth-child(2) p {
   font-size: 1rem;
@@ -63,7 +62,6 @@ main .artistTabWrap a .artistImg {
   height: 36px;
   border-radius: 100%;
   background-size: cover;
-  border: 1px solid #4a6dc7;
 }
 main .artistTabWrap a p {
   color: #001f3f;
