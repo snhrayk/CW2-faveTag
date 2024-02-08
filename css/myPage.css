@@ -1,0 +1,54 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #aebae4;
+}
+
+header {
+  width: 100%;
+  height: 44px;
+  background-color: #4a6dc7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 16px 0;
+  border-bottom: 1px solid rgba(0, 31, 63, 0.6);
+}
+header h1 {
+  color: white;
+  font-size: 1.8rem;
+}
+
+main {
+  width: 100%;
+  height: auto;
+}
+main section {
+  width: 100%;
+  height: 150px;
+  display: grid;
+}
+main section .userImg {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+main section .userWrap {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+main section .follow {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+footer {
+  width: 100%;
+  height: 44px;
+  background-color: #4a6dc7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 20px 0;
+}/*# sourceMappingURL=myPage.css.map */

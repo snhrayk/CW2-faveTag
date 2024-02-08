@@ -76,9 +76,17 @@ h1 {
   color: white;
   background-color: #4a6dc7;
 }
+.artist.selected {
+  /* 他のスタイル... */
+  border: 3px solid transparent; /* 初期状態のボーダーを設定 */
+  transition: border-color 0.2s ease-in-out; /* ボーダー色の変更にアニメーションを適用 */
+}
 
+.artist.selected.highlighted {
+  border-color: #c74a82;
+}
 a {
   text-align: end;
   margin-right: 20px;
   display: block;
-}/*# sourceMappingURL=artist.css.map */
+} /*# sourceMappingURL=artist.css.map */
