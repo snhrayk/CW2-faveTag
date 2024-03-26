@@ -1,5 +1,5 @@
 const accessToken =
-  "BQCbmnEDLIgVM0cARvppqsTQw7_VFzaiQF2yE9Yu6UJUACI1vWNTJhOkRxYpzprzlDLJFXStGb-49TU41CMTgq-kG7Y5eDaL_o3-CJsEL1tkNH8Ie69HDJqwd-qCGOzn0-XideKC6ktb2ba2HhmvQWD_T8gvElt67oHyv_qEXiJ1oKGlW02xN0Jf0r6RikbSF6m52r03B_JwpLSLBb4iIetyCZMP-DFEb1ZFH0BlTYFsz8buc8FgeIo0wbRC3etYdFL4xgKhn9atDfR_BfRdOjcw";
+  "BQDwAxbdDhBu4qjS6_Mz02x1DG2AwsxcB9TkY84xNNAP67FzJ5gAm-n8wDyr6zPMvYW37neORK4L3Iik9uRKoCZiqnOjERFVVwuttj7lszDvrXvXdKCZDGXoT2zrUHAG2nAwSApkhU-T0ns76AGFrRUVd5A1Caufw5Iwe63nyILP8D9nt8jLoFpyQFdKdQ7t0fbAEqQq3Rm1LjbiovkOMy7aDLdV829aWuABmbNtPbnaPjlDmQcn3w2Islo4qI6mWfuqttVp_2mDjuUPjYhDNGF-";
 document.addEventListener("DOMContentLoaded", function () {
   // Ariana Grandeの情報を取得して表示する関数
   async function getArianaGrandeInfo() {
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Sabrina Carpenterの情報を取得して表示する関数
   async function getSabrinaCarpenterInfo() {
     const response = await fetch(
-      "https://api.spotify.com/v1/artists/3MpGqNB0Vzdnv26lYc4Pjl",
+      "https://api.spotify.com/v1/artists/74KM79TiuVKeVCqs8QtB0B",
       {
         headers: {
           Authorization: `Bearer ${accessToken}`,
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const data = await response.json();
     console.log(data);
     const artistImg = document.querySelectorAll(".artistImg")[1];
-    const artistName = document.querySelectorAll("artistName")[1];
+    const artistName = document.querySelectorAll(".artistName")[1];
 
     // アーティストの写真を表示
     artistImg.style.backgroundImage = `url(${data.images[0].url})`;
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Johnny Orlandoの情報を取得して表示する関数
   async function getJohnnyOrlandoInfo() {
     const response = await fetch(
-      "https://api.spotify.com/v1/artists/4DMKwE2E2iYDKY01C335Uw",
+      "https://api.spotify.com/v1/artists/6aX6KqXgEcARRHwvWxHcFW",
       {
         headers: {
           Authorization: `Bearer ${accessToken}`,
