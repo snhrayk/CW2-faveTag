@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>新規会員登録</title>
+    <link rel="stylesheet" href="css/ress.css" />
+    <link rel="stylesheet" href="css/signUp.css" />
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1><img src="./img/faveTag_mainColor.svg" alt="ロゴ" /></h1>
+      <section class="logIn">
+        <h2>新規会員登録</h2>
+        <div class="formWrap">
+          <div class="mailAddress">
+            <p>メールアドレス</p>
+            <input type="email" name="email" />
+          </div>
+          <div class="password">
+            <p>パスワード</p>
+            <input type="password" name="password" />
+            <!-- <button><img src="./img/eye.svg" alt="" /></button> -->
+          </div>
+          <div class="password">
+            <p>パスワード</p>
+            <input type="password" name="password" />
+            <!-- <button><img src="./img/eye.svg" alt="" /></button> -->
+          </div>
+        </div>
+        <button>新規会員登録する</button>
+      </section>
+      <section class="googleLogIn">
+        <img src="./img/or.svg" alt="" />
+        <a href="#"><img src="./img/googleLogin.svg" alt="" /></a>
+      </section>
+    </main>
+    <footer>
+      <p><a href="logIn.html">既に会員登録をお済みの方はこちら</a></p>
+    </footer>
+  </body>
+</html>

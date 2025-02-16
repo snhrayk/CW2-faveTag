@@ -1,0 +1,111 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Hiragino Maru Gothic Std", sans-serif;
+}
+
+main {
+  width: 100%;
+  height: auto;
+}
+main h1 {
+  width: 100%;
+  height: 150px;
+  border-bottom: 1px solid rgba(0, 31, 63, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .logIn {
+  width: 90%;
+  margin: 0 auto 20px;
+}
+main .logIn h2 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 600;
+  margin: 20px 0 40px;
+  color: #001f3f;
+}
+main .logIn .formWrap {
+  width: 100%;
+}
+main .logIn .formWrap .mailAddress {
+  width: 100%;
+  color: #001f3f;
+  margin-bottom: 16px;
+}
+main .logIn .formWrap .mailAddress p {
+  padding-left: 10px;
+  font-size: 1.2rem;
+}
+main .logIn .formWrap .mailAddress input {
+  width: 100%;
+  height: 42px;
+  background-color: rgba(174, 186, 228, 0.2);
+  border-radius: 6px;
+}
+main .logIn .formWrap .password {
+  width: 100%;
+  color: #001f3f;
+  margin-bottom: 16px;
+}
+main .logIn .formWrap .password p {
+  padding-left: 10px;
+  font-size: 1.2rem;
+}
+main .logIn .formWrap .password input {
+  width: 100%;
+  height: 42px;
+  background-color: rgba(174, 186, 228, 0.2);
+  border-radius: 6px;
+}
+main .logIn .formWrap .password a {
+  display: block;
+  font-size: 0.8rem;
+  text-align: right;
+  color: #001f3f;
+  padding-right: 4px;
+}
+main .logIn button {
+  width: 100%;
+  height: 52px;
+  border-radius: 6px;
+  background-color: #4a6dc7;
+  color: white;
+  font-size: 1.6rem;
+  margin-top: 20px;
+}
+main .googleLogIn {
+  width: 90%;
+  margin: 0 auto 20px;
+}
+main .googleLogIn img {
+  width: 100%;
+}
+main .googleLogIn a {
+  width: 100%;
+  margin-top: 20px;
+  display: block;
+  text-align: center;
+}
+main .googleLogIn a img {
+  width: 60%;
+}
+
+footer {
+  width: 100%;
+  height: 130px;
+  background-color: #4a6dc7;
+}
+footer p {
+  padding-top: 10px;
+  text-align: center;
+}
+footer p a {
+  color: white;
+}/*# sourceMappingURL=signUp.css.map */

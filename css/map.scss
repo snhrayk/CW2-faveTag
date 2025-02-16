@@ -1,0 +1,80 @@
+$background: #aebae4;
+$main: #4a6dc7;
+$accent: #001f3f;
+$heart: #c74a82;
+$event: rgba(233, 66, 53, 0.6);
+$release: rgba(74, 131, 199, 0.6);
+$goods: rgba(74, 199, 154, 0.6);
+$other: rgba(0, 0, 0, 0.6);
+$subFont: rgba(0, 31, 63, 0.6);
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $background;
+}
+
+header {
+  width: 100%;
+  height: 44px;
+  background-color: $main;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 16px 0;
+  border-bottom: 1px solid $subFont;
+  // h1 {
+  //   // border: 1px solid tomato;
+  // }
+  .headerBtn {
+    width: 24px;
+    height: auto;
+  }
+}
+
+main {
+  width: 100%;
+  height: auto;
+  .mapWrap {
+    width: 100%;
+    height: 690px;
+    // position: relative;
+    // top: 0;
+    // left: 0;
+    background-size: cover;
+    background-image: url(../img/map.jpg);
+    button:first-child {
+      transform: translate(220px, 100px);
+      // position: absolute;
+      // top: 32%;
+      // right: 40px;
+    }
+    button:nth-child(2) {
+      transform: translate(300px, 400px);
+      // position: absolute;
+      // top: 60%;
+      // right: 30px;
+    }
+    #tooltip {
+      position: absolute;
+      display: none;
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  height: 44px;
+  background-color: $main;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 20px 0;
+}

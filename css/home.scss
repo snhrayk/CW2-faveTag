@@ -1,0 +1,398 @@
+$background: #aebae4;
+$main: #4a6dc7;
+$accent: #001f3f;
+$heart: #c74a82;
+$event: rgba(233, 66, 53, 0.6);
+$release: rgba(74, 131, 199, 0.6);
+$goods: rgba(74, 199, 154, 0.6);
+$other: rgba(0, 0, 0, 0.6);
+$subFont: rgba(0, 31, 63, 0.6);
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $background;
+  font-family: "Hiragino Maru Gothic Std", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 44px;
+  background-color: $main;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 16px 0;
+  border-bottom: 1px solid $subFont;
+  // h1 {
+  //   // border: 1px solid tomato;
+  // }
+  .headerBtn {
+    width: 24px;
+    height: auto;
+  }
+}
+
+main {
+  .artistTabWrap {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: end;
+    a:first-child {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 31%;
+      text-decoration: none;
+      text-align: center;
+      // margin: 0 auto;
+      border-bottom: 6px solid $main;
+      .artistImg {
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        background-size: cover;
+        // border: 1px solid $main;
+      }
+      p {
+        font-size: 1rem;
+        color: $accent;
+        // border-bottom: 6px solid $main;
+      }
+      // .select {
+      //   width: 40%;
+      // }
+      // .artistTab {
+      //   text-align: center;
+      //   padding-top: 6px;
+      // }
+    }
+    a {
+      width: 23%;
+      text-decoration: none;
+      text-align: center;
+      // border: 1px solid tomato;
+      padding-top: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .artistImg {
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        background-size: cover;
+        // border: 1px solid $main;
+      }
+      p {
+        color: $accent;
+        font-size: 0.8rem;
+      }
+    }
+  }
+  .artistTop {
+    width: 100%;
+    height: 106px;
+    // background-image: url(../img/Stella\ Rivers.jpeg);
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    top: 0;
+    left: 0;
+    h2 {
+      font-size: 2.8rem;
+      font-family: "Italianno", cursive;
+      color: white;
+      position: absolute;
+      top: 50%;
+      left: 20%;
+      transform: translate(-50%, -30%);
+    }
+  }
+  .menuTab {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    p {
+      width: 16%;
+      font-size: 1.2rem;
+      font-family: "Hiragino Maru Gothic Std", sans-serif;
+      color: white;
+      margin-top: 16px;
+      padding-bottom: 8px;
+      text-align: center;
+      // border: 1px solid tomato;
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+    p:first-child {
+      font-weight: 600;
+    }
+    .menuSelect {
+      width: 20%;
+      border-bottom: 6px solid $main;
+      font-size: 1.4rem;
+      padding-bottom: 4px;
+      a {
+        color: $accent;
+      }
+    }
+  }
+  .postWrap {
+    width: 100%;
+    height: 480px;
+    overflow: auto;
+    section {
+      width: 100%;
+      height: auto;
+      background-color: white;
+      padding: 14px 0 10px;
+      border-bottom: 1px solid $subFont;
+      .nameWrap {
+        width: 100%;
+        height: 36px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        // border: 1px solid tomato;
+        .userWrap {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          .userIcon {
+            width: 36px;
+            height: 36px;
+            border-radius: 100%;
+            background-color: #c74a82;
+            margin-left: 14px;
+          }
+          .userName {
+            width: 130px;
+            height: 36px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            // border: 1px solid tomato;
+            padding-left: 10px;
+            p {
+              font-family: "Hiragino Maru Gothic Std", sans-serif;
+              font-size: 2rem;
+              font-weight: 400;
+              line-height: 1.2;
+              padding: 0;
+              margin: 0;
+              span {
+                font-size: 1rem;
+                font-weight: 300;
+                padding-left: 5px;
+                color: $subFont;
+              }
+            }
+            time {
+              font-size: 0.8rem;
+              color: $subFont;
+            }
+          }
+        }
+        h4 {
+          font-family: "Hiragino Maru Gothic Std", sans-serif;
+          font-size: 2rem;
+          font-weight: 400;
+          margin-left: 8rem;
+          margin-right: 2rem;
+        }
+      }
+      .userText {
+        font-size: 1.6rem;
+        font-family: "Hiragino Kaku Gothic Std", sans-serif;
+        font-weight: 300;
+        line-height: 22px;
+        margin: 12px 16px 20px;
+      }
+      .btnWrap {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding-right: 20px;
+        button:last-child > img {
+          width: 20px;
+          height: auto;
+        }
+      }
+    }
+    section:first-child {
+      border-left: 14px solid $event;
+      h4 {
+        color: $event;
+      }
+    }
+    section:nth-child(2) {
+      border-left: 14px solid $release;
+      h4 {
+        color: $release;
+      }
+    }
+    section:nth-child(3) {
+      border-left: 14px solid $goods;
+      h4 {
+        color: $goods;
+      }
+    }
+    section:nth-child(4) {
+      border-left: 14px solid $other;
+      h4 {
+        color: $other;
+      }
+    }
+  }
+  .postBtn {
+    width: 66px;
+    height: 66px;
+    border-radius: 100%;
+    color: white;
+    background-color: $main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 30px -15px #001f3f;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    a {
+      font-size: 4rem;
+    }
+  }
+
+  // .modal-open {
+  //   position: fixed;
+  //   top: 50%;
+  //   left: 50%;
+  //   font-size: 16px;
+  //   font-weight: bold;
+  //   width: 300px;
+  //   height: 60px;
+  //   color: #fff;
+  //   background: #000;
+  //   border: none;
+  //   cursor: pointer;
+  //   translate: -50% -50%;
+  // }
+
+  /* モーダルと背景の指定 */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 50%);
+    padding: 40px 20px;
+    overflow: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    box-sizing: border-box;
+  }
+
+  /* モーダルの擬似要素の指定 */
+  .modal:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    margin-left: -0.2em;
+  }
+
+  /* クラスが追加された時の指定 */
+  .modal.is-active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* モーダル内側の指定 */
+  .modal-container {
+    // position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 600px;
+    width: 90%;
+  }
+
+  /* モーダルのコンテンツ部分の指定 */
+  .modal-content {
+    height: 250px;
+    background: #fff;
+    text-align: left;
+    line-height: 1.8;
+    padding: 20px;
+    border-radius: 10px;
+    .text {
+      display: flex;
+      flex-direction: column;
+      .genre {
+        font-size: 1.4rem;
+      }
+      input {
+        height: 100px;
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  .btnWrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    /* モーダルを閉じるボタンの指定 */
+  }
+  .modal-close {
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // top: -20px;
+    // right: -20px;
+    // width: 40px;
+    // height: 40px;
+    font-size: 1.4rem;
+    color: #b70d00;
+    cursor: pointer;
+  }
+
+  .post {
+    width: 80px;
+    height: 80px;
+    background-color: $main;
+    border-radius: 100%;
+    color: white;
+    font-size: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* モーダルのコンテンツ部分のテキストの指定 */
+  .modal-content p {
+    margin: 1em 0;
+  }
+}
+
+footer {
+  width: 100%;
+  height: 44px;
+  background-color: $main;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 20px 0;
+}

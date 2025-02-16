@@ -1,0 +1,122 @@
+$background: #aebae4;
+$main: #4a6dc7;
+$accent: #001f3f;
+$heart: #c74a82;
+$event: rgba(233, 66, 53, 0.6);
+$release: rgba(74, 131, 199, 0.6);
+$goods: rgba(74, 199, 154, 0.6);
+$other: rgba(0, 0, 0, 0.6);
+$subFont: rgba(0, 31, 63, 0.6);
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  color: $accent;
+  font-family: "Hiragino Maru Gothic Std", sans-serif;
+}
+
+h1 {
+  width: 90%;
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 10% auto 0;
+}
+
+.artistSearch {
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  // border: 1px solid tomato;
+  margin: 10px auto 20px;
+  input {
+    width: 78%;
+    margin-top: 2px;
+    padding: 7px 8px;
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 6px;
+    background-color: rgba(118, 118, 128, 0.12);
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 1.7rem;
+    text-overflow: ellipsis;
+  }
+  button {
+    width: 20%;
+    color: white;
+    font-size: 1.6rem;
+    background-color: $main;
+    border-radius: 6px;
+  }
+}
+
+.artistWrap {
+  width: 90%;
+  margin: auto;
+  overflow: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  .artist {
+    width: 150px;
+    height: 170px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    // border: 2px solid $heart;
+    .artistImg {
+      width: 100%;
+      height: 70%;
+      // background-image: url(../img/AdobeStock_108114874.jpeg);
+      background-size: cover;
+    }
+    .artistName {
+      width: 100%;
+      height: 30%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: white;
+      background-color: $main;
+    }
+    .selected {
+      transition: border 0.4s ease-in-out;
+      border: 3px solid transparent;
+      .highlighted {
+        border: 3px solid #c74a82;
+      }
+    }
+  }
+}
+// .artist:first-child > .artistImg {
+//   background-image: url(../img/AuroraSky.jpeg);
+// }
+// .artist:nth-child(2) > .artistImg {
+//   background-image: url(../img/Stella\ Rivers.jpeg);
+// }
+// .artist:nth-child(3) > .artistImg {
+//   background-image: url(../img/Zoey\ Spark.jpeg);
+// }
+// .artist:nth-child(4) > .artistImg {
+//   background-image: url(../img/Jackson\ Nova.jpeg);
+// }
+// .artist:nth-child(5) > .artistImg {
+//   background-image: url(../img/Lila\ Rosewood.jpeg);
+// }
+// .artist:nth-child(6) > .artistImg {
+//   background-image: url(../img/Elara\ Raye.jpeg);
+// }
+
+a {
+  text-align: end;
+  margin-right: 20px;
+  display: block;
+}

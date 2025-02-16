@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ログイン</title>
+    <link rel="stylesheet" href="css/ress.css" />
+    <link rel="stylesheet" href="css/logIn.css" />
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script> -->
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script> -->
+    <!-- Add Firebase products that you want to use -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script> -->
+  </head>
+  <body>
+    <main>
+      <h1><img src="./img/faveTag_mainColor.svg" alt="ロゴ" /></h1>
+      <section class="logIn">
+        <h2>Log in</h2>
+        <div class="formWrap">
+          <div class="mailAddress">
+            <p>メールアドレス</p>
+            <input type="email" name="email" />
+          </div>
+          <div class="password">
+            <p>パスワード</p>
+            <input type="password" name="password" />
+            <!-- <button><img src="./img/eye.svg" alt="" /></button> -->
+            <a href="#">パスワードを忘れた場合はこちら</a>
+          </div>
+        </div>
+        <button>ログイン</button>
+      </section>
+      <div class="googleLogIn">
+        <img src="./img/or.svg" alt="" />
+        <button id="googleLogInBtn">
+          <img src="./img/googleLogin.svg" alt="" />
+        </button>
+      </div>
+    </main>
+    <footer>
+      <p><a href="signUp.html">まだ会員登録をお済みでない方はこちら</a></p>
+    </footer>
+    <!-- <script src="js/google_logIn.js"></script> -->
+  </body>
+</html>

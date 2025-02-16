@@ -1,0 +1,134 @@
+$background: #aebae4;
+$main: #4a6dc7;
+$accent: #001f3f;
+$heart: #c74a82;
+$event: rgba(233, 66, 53, 0.6);
+$release: rgba(74, 131, 199, 0.6);
+$goods: rgba(74, 199, 154, 0.6);
+$other: rgba(0, 0, 0, 0.6);
+$subFont: rgba(0, 31, 63, 0.6);
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $background;
+  // font-family: "Hiragino Maru Gothic Std", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 44px;
+  background-color: $main;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 16px 0;
+  border-bottom: 1px solid $subFont;
+  h1 {
+    color: white;
+    font-size: 1.8rem;
+  }
+}
+
+main {
+  width: 100%;
+  height: auto;
+  .myProfile {
+    width: 100%;
+    height: 150px;
+    display: grid;
+    background: url(../img/teamlabo.JPG);
+    background-size: cover;
+    background-position: top;
+    // background: rgba(255, 255, 255, 0.562), url(../img/teamlabo.JPG) top/cover;
+
+    .userImg {
+      grid-column: 1/2;
+      grid-row: 1/3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .icon {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        border: 6px solid white;
+        background: url(../img/usj.JPG);
+        background-position: center;
+        background-size: cover;
+      }
+      p {
+        color: white;
+      }
+    }
+    .userWrap {
+      // height: 90px;
+      grid-column: 2/3;
+      grid-row: 1/2;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      h2 {
+        font-size: 2rem;
+        span {
+          font-size: 1rem;
+        }
+      }
+    }
+    .follow {
+      // height: 90px;
+      grid-column: 3/4;
+      grid-row: 1/2;
+      display: flex;
+      justify-content: center;
+      // align-items: center;
+      flex-direction: column;
+      color: white;
+      text-align: start;
+      p {
+        text-align: start;
+        span {
+          font-size: 1.4rem;
+        }
+      }
+    }
+    .message {
+      width: auto;
+      // height: 50px;
+      grid-column: 2/4;
+      grid-row: 2/3;
+      background-color: white;
+      border-radius: 10px;
+      // border: 1px solid tomato;
+      margin: -10px 10px 10px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      p {
+        font-size: 1.4rem;
+      }
+    }
+  }
+  .favArtist {
+    width: 90%;
+    margin: 0 auto;
+    h3 {
+      text-align: center;
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  height: 44px;
+  background-color: $main;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 20px 0;
+}
